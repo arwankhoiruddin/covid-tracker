@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">RiPaCovid</string>
+    <string name="title_home">Daftar</string>
+    <string name="title_peta">Peta</string>
+    <string name="title_tambah">Tambah</string>
+
+    <string name="judul_home">Riwayat Lokasi Pasien Covid</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="alamat">Alamat</string>
+    <string name="tanggalSakit">Tanggal Sakit: </string>
+    <string name="btnTanggal">Pilih Tanggal Sakit</string>
+    <string name="btnClear">Hapus Semua Data Lokasi</string>
+    <string name="btnExport">Export ke CSV</string>
+    <string name="btnTambahLokasi">Tambah Lokasi</string>
+
+    <string name="judulTambah">Tambah Lokasi Pasien Covid</string>
+
+    <string name="btnEdit">Ubah</string>
+    <string name="btnDelete">Hapus</string>
+    <string name="btnTambah">Tambah</string>
+    <string name="btnRefresh">Refresh</string>
+    <string name="btnSimpan">Simpan</string>
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tambah"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="10dp" >
+
+    <ImageView
+        android:id="@+id/person"
+        android:src="@drawable/person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_below="@id/person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:text="@string/judulTambah"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextNama"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/text_home"
+        android:layout_marginTop="18dp"
+        android:autofillHints="@string/nama_lengkap"
+        android:ems="10"
+        android:textSize="16dp"
+        android:hint="@string/nama_lengkap"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/editTextNama"
+        android:layout_marginTop="8dp"
+        android:autofillHints="@string/alamat"
+        android:ems="10"
+        android:textSize="16dp"
+        android:hint="@string/alamat"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnPilihTanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:textColor="@color/white"
+        android:layout_below="@id/editTextAlamat"
+        android:text="@string/btnTanggal" />
+
+    <LinearLayout
+        android:id="@+id/sakit"
+        android:layout_below="@id/btnPilihTanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tanggalSakit"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/tanggalSakit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnClearLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:textColor="@color/white"
+        android:layout_below="@id/sakit"
+        android:text="@string/btnClear" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/btnClearLocation"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/map"
+        tools:context=".ui.peta.PetaFragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <Button
+        android:id="@+id/btnTambahPasien"
+        android:text="@string/btnSimpan"
+        android:backgroundTint="@color/design_default_color_primary"
+        android:textColor="@color/white"
+        android:layout_below="@id/map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
